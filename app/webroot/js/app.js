@@ -177,6 +177,9 @@ var MyCake = {
                 return ($('#ContactEmail').val() === $('#ContactConfirmEmail').val());
             },
 
+            /**
+             * Return if a given field is empty or not
+             */
             isEmpty: function(field) {
                 return (field === "");
             }
