@@ -15,7 +15,7 @@ class ContactsController extends AppController {
     var $uses = array('Contact');
     
     var $components = array('RequestHandler');
-    var $helpers = array('Javascript');
+    var $helpers = array('Javascript'); //Adding this for use in the view to convert php object to json
 
     function beforeFilter() {
         $this->pageTitle = 'Contacts Controller';

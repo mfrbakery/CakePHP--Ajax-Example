@@ -4,6 +4,8 @@
  * @author Zubin Khavarian <zubin.khavarian@gmail.com>
  */
 
+var domainUrl = 'http://loc.mycake.com';
+
 $(document).ready(function() {
     // Handle all form field focus and blur, styling and animation
     var inputFields = $('#contactForm :input[type=text], #contactForm :input[type=password]');
@@ -31,7 +33,7 @@ $(document).ready(function() {
         //if(MyCake.validation.client.all()) {
         if(true) {
             $.ajax({
-                url: 'contacts/ajax_signup_service/service:default',
+                url: '/contacts/ajax_signup_service/service:default',
                 context: document.body,
 
                 data: $('#contactForm').serializeArray(),
@@ -122,7 +124,7 @@ var MyCake = {
              */
             markAll: function() {
                 if(!MyCake.validation.client.isValidEmail($('#ContactEmail').val())) {
-                    console.log('email is invalid');
+                    //console.log('email is invalid');
                 }
 
                 if(MyCake.validation.client.isEmpty($('#ContactFirstName').val())) {
@@ -191,7 +193,7 @@ var MyCake = {
              */
             checkUniqueEmail: function() {
                 $.ajax({
-                    url: 'contacts/ajax_signup_service/service:login_unique',
+                    url: '/contacts/ajax_signup_service/service:login_unique',
                     context: document.body,
 
                     data: {
