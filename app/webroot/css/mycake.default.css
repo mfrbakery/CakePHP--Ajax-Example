@@ -1,0 +1,74 @@
+.form-field-wrapper {
+    width: 460px;
+    margin: 3px;
+
+}
+
+.form-field-wrapper label {
+    width: 150px;
+    display: inline-block;
+    color: #555;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', Helvetica, Jamrul, sans-serif;
+}
+
+.form-field-wrapper input {
+    width: 250px;
+    display: inline-block;
+    padding: 5px;
+}
+
+#signup-form {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #999;
+    background-color: #e5e5e5;
+    display: inline-block;
+}
+
+#result-div {
+    border: 2px solid #999;
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    -moz-border-radius: 5px;
+}
+
+input {
+    border: 1px solid #999;
+}
+
+.mark-field-invalid {
+    border: 1px solid #d00;
+    background-color: #fdd;
+}
+
+.mark-field-valid {
+    border: 1px solid #0d0;
+    background-color: #dfd;
+}
+
+.mark-field-focused {
+    border: 1px solid #73a6ff !important;
+    background-color: #eff5ff !important;
+}
+
+.frm-msg-success, .frm-msg-fail {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-top: -7px;
+    margin-bottom: -7px;
+    margin-left: 5px;
+}
+
+.frm-msg-success {
+    background: url(images/action_success.png);
+    background-repeat: no-repeat;
+}
+
+.frm-msg-fail {
+    background: url(images/action_fail.png);
+    background-repeat: no-repeat;
+}
